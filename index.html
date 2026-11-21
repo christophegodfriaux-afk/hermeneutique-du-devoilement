@@ -29,6 +29,25 @@
 .rose-symbol .symbol-note{max-width:740px;color:var(--muted);font-size:1.02rem}
 
 .photo{height:auto}
+
+/* Présentation du livre : le lecteur YouTube est créé à la demande. */
+.intro-audio{margin-top:25px;padding:23px 24px;border:1px solid #e0c58c66;border-radius:4px;background:linear-gradient(125deg,#172941bb,#0d1625);text-align:left;box-shadow:0 12px 35px #0002;scroll-margin-top:110px}
+.intro-audio .eyebrow{font-size:.875rem;letter-spacing:.1em;margin:0 0 8px}
+.intro-audio h2{font-size:clamp(1.45rem,2.4vw,1.85rem);margin:0 0 8px}
+.intro-audio-caption{font-size:1rem;color:var(--muted);margin:0 0 18px;line-height:1.55}
+.intro-audio-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.intro-audio-play{gap:10px;min-height:49px}
+.intro-audio-play svg{width:18px;height:18px;flex-shrink:0}
+.intro-audio-link{font-size:.9rem;text-underline-offset:4px;color:var(--muted)}
+.intro-audio-player{width:min(100%,360px);aspect-ratio:9/16;margin:22px auto 0;background:#000;border:1px solid #61708b66;border-radius:3px;overflow:hidden}
+.intro-audio-player iframe{width:100%;height:100%;display:block;border:0}
+.intro-audio-close{display:block;margin:15px auto 0;padding:9px 14px;background:transparent;color:var(--cream);border:1px solid #77849a;border-radius:3px;font:inherit;font-size:.9rem;cursor:pointer}
+.intro-audio-close:hover{background:#ffffff0c}
+.intro-audio-close:focus-visible{outline:3px solid #93b6ff;outline-offset:4px}
+.intro-audio [hidden]{display:none!important}
+@media(max-width:800px){.intro-audio{max-width:600px;margin-inline:auto;text-align:center}.intro-audio-actions{justify-content:center}}
+@media(max-width:480px){.intro-audio{padding:20px 17px;scroll-margin-top:155px}.intro-audio-play{width:100%}.intro-audio-actions{gap:12px}.intro-audio-player{margin-top:18px}}
+
 </style>
 <title>Une herméneutique du dévoilement — Christophe Godfriaux</title>
 <meta name="description" content="Une herméneutique du dévoilement, de Christophe Godfriaux : lecture symbolique des récits bibliques et des mythes à la lumière de Jung.">
@@ -129,9 +148,21 @@
 </script>
 </head>
 <body>
-<header><nav class="nav wrap" aria-label="Navigation principale"><a class="brand" href="#accueil">Christophe Godfriaux</a><div class="links"><a href="#livre">Le livre</a><a href="#reflexions">Réflexions</a><a href="paroles-de-lecteurs.html">Paroles de lecteurs</a><a href="#auteur">L'auteur</a><a href="#acheter">Où le trouver ?</a><a href="#contact">Contact</a></div></nav></header>
+<header><nav class="nav wrap" aria-label="Navigation principale"><a class="brand" href="#accueil">Christophe Godfriaux</a><div class="links"><a href="#presentation-audio">Écouter</a><a href="#livre">Le livre</a><a href="#reflexions">Réflexions</a><a href="paroles-de-lecteurs.html">Paroles de lecteurs</a><a href="#auteur">L'auteur</a><a href="#acheter">Où le trouver ?</a><a href="#contact">Contact</a></div></nav></header>
 <main>
-<section id="accueil" class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Une invitation à regarder autrement</div><h1>Qu'y a-t-il <span class="gold">au-delà</span> du premier voile ?</h1><div class="line"></div><p class="lead">Une herméneutique du dévoilement <span class="gold">— Imago Dei</span></p><p class="muted">De Christophe Godfriaux. Des récits anciens, des questions toujours actuelles, et la liberté d'emprunter son propre chemin.</p><p class="hero-note">Lecture symbolique des récits bibliques et des mythes · Psychologie analytique de Jung</p><div class="actions"><a class="btn" href="#livre">Découvrir le livre</a><a class="btn secondary" href="avant-propos.html">Lire un extrait gratuit</a><a class="btn secondary" href="#acheter">Trouver un exemplaire</a></div></div><div class="hero-art"><div class="rose-stage" aria-label="La rose bleue se révèle progressivement à mesure que tu parcours la page"><img class="hero-rose" src="assets/rose-entiere.png" alt="Rose bleue entière, révélée dans la nuit par une lumière douce" width="282" height="237" decoding="async" fetchpriority="high"></div><p class="hero-note center">La rose bleue, image d'un cheminement qui laisse place à l'ombre autant qu'à la lumière.</p></div></div></section>
+<section id="accueil" class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Une invitation à regarder autrement</div><h1>Qu'y a-t-il <span class="gold">au-delà</span> du premier voile ?</h1><div class="line"></div><p class="lead">Une herméneutique du dévoilement <span class="gold">— Imago Dei</span></p><p class="muted">De Christophe Godfriaux. Des récits anciens, des questions toujours actuelles, et la liberté d'emprunter son propre chemin.</p><p class="hero-note">Lecture symbolique des récits bibliques et des mythes · Psychologie analytique de Jung</p>
+<aside id="presentation-audio" class="intro-audio" aria-labelledby="presentation-audio-titre">
+  <p class="eyebrow">Présentation audio · 16 min 49</p>
+  <h2 id="presentation-audio-titre">Le livre, <span class="gold">à écouter.</span></h2>
+  <p class="intro-audio-caption">Jung, les symboles et la rencontre avec l’Autre : une conversation pour découvrir l’univers du livre.</p>
+  <div class="intro-audio-actions">
+    <a id="presentation-audio-ouvrir" class="btn intro-audio-play" href="https://www.youtube.com/watch?v=ovhOj9v1LKI" aria-controls="presentation-audio-lecteur" aria-expanded="false"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 3.5v13L16 10z" fill="currentColor"/></svg>Écouter la présentation</a>
+    <a class="intro-audio-link" href="https://www.youtube.com/watch?v=ovhOj9v1LKI" target="_blank" rel="noopener noreferrer">Voir sur YouTube</a>
+  </div>
+  <div id="presentation-audio-lecteur" class="intro-audio-player" hidden></div>
+  <button id="presentation-audio-fermer" class="intro-audio-close" type="button" aria-controls="presentation-audio-lecteur" hidden>Fermer le lecteur</button>
+</aside>
+<div class="actions"><a class="btn" href="#livre">Découvrir le livre</a><a class="btn secondary" href="avant-propos.html">Lire un extrait gratuit</a><a class="btn secondary" href="#acheter">Trouver un exemplaire</a></div></div><div class="hero-art"><div class="rose-stage" aria-label="La rose bleue se révèle progressivement à mesure que tu parcours la page"><img class="hero-rose" src="assets/rose-entiere.png" alt="Rose bleue entière, révélée dans la nuit par une lumière douce" width="282" height="237" decoding="async" fetchpriority="high"></div><p class="hero-note center">La rose bleue, image d'un cheminement qui laisse place à l'ombre autant qu'à la lumière.</p></div></div></section>
 <section id="rose-individuation" class="rose-symbol" aria-labelledby="rose-titre"><div class="wrap rose-symbol-inner"><div class="eyebrow">La symbolique de la rose bleue</div><h2 id="rose-titre">Devenir soi, <span class="gold">sans épuiser le mystère.</span></h2><p class="symbol-text">La rose bleue symbolise le processus d’individuation. De même que ses pétales, dans toute leur complexité, s’organisent autour d’un même cœur, les différentes dimensions de notre être s’organisent autour d’un même centre : le Soi.</p><p class="symbol-note">La rose évoque l’individuation ; le bleu, le mystère. Devenir soi n’exige pas que tout soit dévoilé.</p></div></section>
 <section id="livre"><div class="wrap two"><img class="photo photo-books" src="assets/livres.jpg" alt="Une herméneutique du dévoilement, posé entre Le Livre rouge de Jung et le Dictionnaire des symboles" loading="lazy" width="950" height="1260" decoding="async"><div><div class="eyebrow">Le livre</div><h2>Des histoires anciennes. <span class="gold">Des questions vivantes.</span></h2><p>Et si les récits que nous croyons connaître avaient encore quelque chose à nous dire ? Non comme des réponses définitives, mais comme des occasions de déplacer notre regard.</p><p>À travers une lecture nourrie par la psychologie analytique de Jung, <em>Une herméneutique du dévoilement</em>, suivi de <em>Imago Dei</em>, invite à rencontrer autrement les personnages et les symboles des récits bibliques et mythologiques.</p><p>Il ne s'agit ni de tracer un chemin obligatoire ni de promettre une révélation. Seulement de proposer des pistes, des rencontres, des questions. Le reste appartient à chaque lecteur.</p><p class="small">Préface de Georgios Bouronikos · Postface de Philippe Liénard</p></div></div></section>
 <section class="section-dark"><div class="wrap"><div class="eyebrow">Une démarche ouverte</div><h2>Lire, c'est aussi <span class="gold">se déplacer.</span></h2><p class="intro">Sortir un instant de sa propre pensée pour entrer dans celle d'un autre. Découvrir d'autres couleurs à travers un nouveau prisme. Laisser le texte résonner avec sa propre histoire, sans chercher à abolir ce qui nous sépare.</p><div class="feature-grid"><div class="feature"><h3>Changer de regard</h3><p>Approcher les récits anciens à travers une lecture psychologique, sans prétendre épuiser leur sens.</p></div><div class="feature"><h3>Accueillir la complexité</h3><p>Reconnaître que lumière et ombre participent ensemble à l'expérience humaine.</p></div><div class="feature"><h3>Rester en mouvement</h3><p>Recevoir des invitations à l'expérience, et garder la liberté de ses propres questions.</p></div><div class="center" style="margin-top:38px"><p class="intro" style="max-width:740px;margin:0 auto 20px">Un texte ne se réduit pas à ce que ses mots semblent dire. Plusieurs traditions nous invitent à explorer ses profondeurs, sans prétendre en épuiser le sens.</p><a class="btn secondary" href="niveaux-de-lecture.html">Explorer les niveaux de lecture</a></div></div></section>
@@ -153,4 +184,38 @@ stage.style.setProperty('--reveal',String(.12+.88*progress));}
 function request(){if(!queued){queued=true;requestAnimationFrame(update)}}
 window.addEventListener('scroll',request,{passive:true});window.addEventListener('resize',request,{passive:true});update();
 })();
-</script></body></html>
+</script><script>
+
+(function(){
+  const open=document.getElementById('presentation-audio-ouvrir');
+  const close=document.getElementById('presentation-audio-fermer');
+  const player=document.getElementById('presentation-audio-lecteur');
+  if(!open||!close||!player)return;
+  open.addEventListener('click',function(event){
+    if(event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+    event.preventDefault();
+    const frame=document.createElement('iframe');
+    frame.title='Présentation du livre Une herméneutique du dévoilement, de Christophe Godfriaux';
+    frame.referrerPolicy='strict-origin-when-cross-origin';
+    frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen; web-share';
+    frame.allowFullscreen=true;
+    frame.src='https://www.youtube-nocookie.com/embed/ovhOj9v1LKI?autoplay=1&rel=0&playsinline=1';
+    player.replaceChildren(frame);
+    player.hidden=false;
+    close.hidden=false;
+    open.setAttribute('aria-expanded','true');
+    open.hidden=true;
+    frame.focus();
+  });
+  close.addEventListener('click',function(){
+    player.replaceChildren();
+    player.hidden=true;
+    close.hidden=true;
+    open.hidden=false;
+    open.setAttribute('aria-expanded','false');
+    open.focus();
+  });
+})();
+
+</script>
+</body></html>
